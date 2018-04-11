@@ -1,0 +1,1 @@
+powershell -NoLogo -NoProfile -NonInteractive -File "%UserProfile%\Documents\WindowsPowershell\setup.ps1"
