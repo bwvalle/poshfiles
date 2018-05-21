@@ -13,7 +13,13 @@ if (Test-Path($ChocolateyProfile)) {
 Set-Theme paradox
 
 # scripts
-gci "$scriptPath\scripts\*.ps1" | foreach { .$_ }
+$scripts = gci "$scriptPath\scripts\*.ps1"
+$scripts += (gci "$scriptPath\work\*.ps1" -ErrorAction SilentlyContinue)
+$scripts | foreach { .$_ }
+
+if (Test-Path("$scriptPath\work")) {
+  Import-Module "$ChocolateyProfile"
+}
 
 # Proxy
 [System.Net.WebRequest]::DefaultWebProxy.Credentials = [System.Net.CredentialCache]::DefaultCredentials

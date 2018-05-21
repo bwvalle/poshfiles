@@ -12,3 +12,5 @@ Set-Alias VS 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Com
 # Cake
 set-alias build ".\build.ps1"
 
+# Utils
+set-alias e start-explorer 
