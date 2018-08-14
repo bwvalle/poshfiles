@@ -1,4 +1,7 @@
 $scriptPath = Split-Path -Path $MyInvocation.MyCommand.Definition -Parent
+# Encoding
+[Console]::OutputEncoding = [System.Text.UTF8Encoding]::UTF8
+$OutputEncoding = [Console]::OutputEncoding
 
 # Modules
 Import-Module posh-git
