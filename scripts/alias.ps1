@@ -14,3 +14,6 @@ set-alias build ".\build.ps1"
 
 # Utils
 set-alias e start-explorer 
+
+# Remove
+remove-item alias:curl
