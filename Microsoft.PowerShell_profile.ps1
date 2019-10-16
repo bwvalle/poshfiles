@@ -6,7 +6,7 @@ $OutputEncoding = [Console]::OutputEncoding
 # Modules
 Import-Module posh-git
 Import-Module -Name oh-my-posh
-
+Import-Module DockerCompletion
 
 Set-Theme paradox
 
