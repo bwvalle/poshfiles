@@ -8,7 +8,7 @@ Import-Module oh-my-posh
 Import-Module DockerCompletion
 Import-Module z
 
-Set-Theme paradox
+Set-Theme MyParadox
 
 # scripts
 $scripts = gci "$scriptPath\scripts\*.ps1"
