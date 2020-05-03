@@ -16,4 +16,4 @@ set-alias build ".\build.ps1"
 set-alias e start-explorer 
 
 # Remove
-remove-item alias:curl
+remove-item alias:curl -ErrorAction SilentlyContinue
